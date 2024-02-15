@@ -15,17 +15,17 @@
             </DoubleCollection>
         </chart:SfCartesianChart.Resources>
         <chart:SfCartesianChart.XAxes>
-            <chart:DateTimeAxis Interval="3" IntervalType="Days" EdgeLabelsDrawingMode="Center" ShowMajorGridLines="False"></chart:DateTimeAxis>
+            <chart:DateTimeAxis Interval="3" IntervalType="Days" EdgeLabelsDrawingMode="Shift" ShowMajorGridLines="False"></chart:DateTimeAxis>
         </chart:SfCartesianChart.XAxes>
         <chart:SfCartesianChart.YAxes>
             <chart:NumericalAxis Interval="10" EdgeLabelsDrawingMode="Center" PlotOffsetEnd="10"></chart:NumericalAxis>
         </chart:SfCartesianChart.YAxes>
-        <chart:StackingAreaSeries ItemsSource="{Binding Data}"
+        <chart:StackingAreaSeries ItemsSource="{Binding Data1}"
                                   XBindingPath="Date"
                                   YBindingPath="Value"
                                   Fill="#0090AF"
             ></chart:StackingAreaSeries>
-        <chart:StackingAreaSeries ItemsSource="{Binding Data1}"
+        <chart:StackingAreaSeries ItemsSource="{Binding Data2}"
                                   XBindingPath="Date"
                                   YBindingPath="Value"
                                   Fill="#8AC114"
